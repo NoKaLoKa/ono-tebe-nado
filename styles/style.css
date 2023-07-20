@@ -45,13 +45,18 @@
     justify-self: end;
     font-style: normal;
     text-underline-offset: 4px;
+    color: #000;
+    font-size: 18px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 135%
 }
 
 .cover {
     position: relative;
     display: flex;
     flex-direction: column;
-    height: 757px;
+    min-height: 757px;
     background-image: url(../images/cover.jpg);
     background-repeat: no-repeat;
     background-size: cover;
@@ -59,6 +64,8 @@
 
 .overlay {
     position: absolute;
+    top: 0;
+    left: 0;
     width: 100%;
     height: 100%;
     background-color: rgb(0, 0, 0, 0.6);
@@ -111,14 +118,13 @@
     justify-content: end;
     align-items: center;
     gap: 78px;
-    padding-bottom: 62px;
+    padding-bottom: 50px;
     color: #fff;
     font-weight: 400;
     font-size: 22px;
     font-style: normal;
     line-height: 28px;
     text-transform: uppercase;
-    list-style: none;
 }
 
 .cover__description-text {
@@ -141,6 +147,7 @@
     text-decoration: none;
     text-transform: uppercase;
     background-color: transparent;
+    cursor: pointer;
 }
 
 .lots {
@@ -176,23 +183,21 @@
     display: flex;
     flex-direction: column;
     justify-content: space-between;
+    background-size: contain;
     width: 430px;
-    height: 450px;
+    min-height: 450px;
 }
 
 .card_type_film {
     background-image: url(../images/card-lot-01.jpg);
-    background-size: contain;
 }
 
 .card_type_book {
     background-image: url(../images/card-lot-02.jpg);
-    background-size: contain;
 }
 
 .card_type_picture {
     background-image: url(../images/card-lot-03.jpg);
-    background-size: contain;
 }
 
 .card__title {
@@ -231,9 +236,9 @@
 
 .about {
     display: grid;
-    grid-template-columns: repeat(1fr, 3);
+    grid-template-columns: repeat(3, 1fr);
     width: 1340px;
-    height: 487px;
+    min-height: 487px;
     padding: 0 50px 0;
 }
 
@@ -248,7 +253,7 @@
     align-items: center;
     width: 240px;
     height: 240px;
-    border-radius: 120px;
+    border-radius: 50%;
     background-color: #000;
 }
 
@@ -280,7 +285,7 @@
     flex-direction: column;
     gap: 25px;
     width: 885px;
-    height: 240px;
+    min-height: 240px;
 }
 
 .about__text {
